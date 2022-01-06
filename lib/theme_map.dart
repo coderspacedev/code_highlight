@@ -1,0 +1,183 @@
+import 'themes/a11y_dark.dart';
+import 'themes/a11y_light.dart';
+import 'themes/agate.dart';
+import 'themes/an_old_hope.dart';
+import 'themes/androidstudio.dart';
+import 'themes/arduino_light.dart';
+import 'themes/arta.dart';
+import 'themes/ascetic.dart';
+import 'themes/atelier_cave_dark.dart';
+import 'themes/atelier_cave_light.dart';
+import 'themes/atelier_dune_dark.dart';
+import 'themes/atelier_dune_light.dart';
+import 'themes/atelier_estuary_dark.dart';
+import 'themes/atelier_estuary_light.dart';
+import 'themes/atelier_forest_dark.dart';
+import 'themes/atelier_forest_light.dart';
+import 'themes/atelier_heath_dark.dart';
+import 'themes/atelier_heath_light.dart';
+import 'themes/atelier_lakeside_dark.dart';
+import 'themes/atelier_lakeside_light.dart';
+import 'themes/atelier_plateau_dark.dart';
+import 'themes/atelier_plateau_light.dart';
+import 'themes/atelier_savanna_dark.dart';
+import 'themes/atelier_savanna_light.dart';
+import 'themes/atelier_seaside_dark.dart';
+import 'themes/atelier_seaside_light.dart';
+import 'themes/atelier_sulphurpool_dark.dart';
+import 'themes/atelier_sulphurpool_light.dart';
+import 'themes/atom_one_dark.dart';
+import 'themes/atom_one_dark_reasonable.dart';
+import 'themes/atom_one_light.dart';
+import 'themes/brown_paper.dart';
+import 'themes/codepen_embed.dart';
+import 'themes/color_brewer.dart';
+import 'themes/darcula.dart';
+import 'themes/dark.dart';
+import 'themes/default.dart';
+import 'themes/docco.dart';
+import 'themes/dracula.dart';
+import 'themes/far.dart';
+import 'themes/foundation.dart';
+import 'themes/github.dart';
+import 'themes/github_gist.dart';
+import 'themes/gml.dart';
+import 'themes/googlecode.dart';
+import 'themes/gradient_dark.dart';
+import 'themes/grayscale.dart';
+import 'themes/gruvbox_dark.dart';
+import 'themes/gruvbox_light.dart';
+import 'themes/hopscotch.dart';
+import 'themes/hybrid.dart';
+import 'themes/idea.dart';
+import 'themes/ir_black.dart';
+import 'themes/isbl_editor_dark.dart';
+import 'themes/isbl_editor_light.dart';
+import 'themes/kimbie.dark.dart';
+import 'themes/kimbie.light.dart';
+import 'themes/lightfair.dart';
+import 'themes/magula.dart';
+import 'themes/mono_blue.dart';
+import 'themes/monokai.dart';
+import 'themes/monokai_sublime.dart';
+import 'themes/night_owl.dart';
+import 'themes/nord.dart';
+import 'themes/obsidian.dart';
+import 'themes/ocean.dart';
+import 'themes/paraiso_dark.dart';
+import 'themes/paraiso_light.dart';
+import 'themes/pojoaque.dart';
+import 'themes/purebasic.dart';
+import 'themes/qtcreator_dark.dart';
+import 'themes/qtcreator_light.dart';
+import 'themes/railscasts.dart';
+import 'themes/rainbow.dart';
+import 'themes/routeros.dart';
+import 'themes/school_book.dart';
+import 'themes/shades_of_purple.dart';
+import 'themes/solarized_dark.dart';
+import 'themes/solarized_light.dart';
+import 'themes/sunburst.dart';
+import 'themes/tomorrow.dart';
+import 'themes/tomorrow_night.dart';
+import 'themes/tomorrow_night_blue.dart';
+import 'themes/tomorrow_night_bright.dart';
+import 'themes/tomorrow_night_eighties.dart';
+import 'themes/vs.dart';
+import 'themes/vs2015.dart';
+import 'themes/xcode.dart';
+import 'themes/xt256.dart';
+import 'themes/zenburn.dart';
+
+const themeMap = {
+  'a11y_dark': a11yDarkTheme,
+  'a11y_light': a11yLightTheme,
+  'agate': agateTheme,
+  'an_old_hope': anOldHopeTheme,
+  'androidstudio': androidstudioTheme,
+  'arduino_light': arduinoLightTheme,
+  'arta': artaTheme,
+  'ascetic': asceticTheme,
+  'atelier_cave_dark': atelierCaveDarkTheme,
+  'atelier_cave_light': atelierCaveLightTheme,
+  'atelier_dune_dark': atelierDuneDarkTheme,
+  'atelier_dune_light': atelierDuneLightTheme,
+  'atelier_estuary_dark': atelierEstuaryDarkTheme,
+  'atelier_estuary_light': atelierEstuaryLightTheme,
+  'atelier_forest_dark': atelierForestDarkTheme,
+  'atelier_forest_light': atelierForestLightTheme,
+  'atelier_heath_dark': atelierHeathDarkTheme,
+  'atelier_heath_light': atelierHeathLightTheme,
+  'atelier_lakeside_dark': atelierLakesideDarkTheme,
+  'atelier_lakeside_light': atelierLakesideLightTheme,
+  'atelier_plateau_dark': atelierPlateauDarkTheme,
+  'atelier_plateau_light': atelierPlateauLightTheme,
+  'atelier_savanna_dark': atelierSavannaDarkTheme,
+  'atelier_savanna_light': atelierSavannaLightTheme,
+  'atelier_seaside_dark': atelierSeasideDarkTheme,
+  'atelier_seaside_light': atelierSeasideLightTheme,
+  'atelier_sulphurpool_dark': atelierSulphurpoolDarkTheme,
+  'atelier_sulphurpool_light': atelierSulphurpoolLightTheme,
+  'atom_one_dark_reasonable': atomOneDarkReasonableTheme,
+  'atom_one_dark': atomOneDarkTheme,
+  'atom_one_light': atomOneLightTheme,
+  'brown_paper': brownPaperTheme,
+  'codepen_embed': codepenEmbedTheme,
+  'color_brewer': colorBrewerTheme,
+  'darcula': darculaTheme,
+  'dark': darkTheme,
+  'default': defaultTheme,
+  'docco': doccoTheme,
+  'dracula': draculaTheme,
+  'far': farTheme,
+  'foundation': foundationTheme,
+  'github_gist': githubGistTheme,
+  'github': githubTheme,
+  'gml': gmlTheme,
+  'googlecode': googlecodeTheme,
+  'gradient_dark': gradientDarkTheme,
+  'grayscale': grayscaleTheme,
+  'gruvbox_dark': gruvboxDarkTheme,
+  'gruvbox_light': gruvboxLightTheme,
+  'hopscotch': hopscotchTheme,
+  'hybrid': hybridTheme,
+  'idea': ideaTheme,
+  'ir_black': irBlackTheme,
+  'isbl_editor_dark': isblEditorDarkTheme,
+  'isbl_editor_light': isblEditorLightTheme,
+  'kimbie.dark': kimbieDarkTheme,
+  'kimbie.light': kimbieLightTheme,
+  'lightfair': lightfairTheme,
+  'magula': magulaTheme,
+  'mono_blue': monoBlueTheme,
+  'monokai_sublime': monokaiSublimeTheme,
+  'monokai': monokaiTheme,
+  'night_owl': nightOwlTheme,
+  'nord': nordTheme,
+  'obsidian': obsidianTheme,
+  'ocean': oceanTheme,
+  'paraiso_dark': paraisoDarkTheme,
+  'paraiso_light': paraisoLightTheme,
+  'pojoaque': pojoaqueTheme,
+  'purebasic': purebasicTheme,
+  'qtcreator_dark': qtcreatorDarkTheme,
+  'qtcreator_light': qtcreatorLightTheme,
+  'railscasts': railscastsTheme,
+  'rainbow': rainbowTheme,
+  'routeros': routerosTheme,
+  'school_book': schoolBookTheme,
+  'shades_of_purple': shadesOfPurpleTheme,
+  'solarized_dark': solarizedDarkTheme,
+  'solarized_light': solarizedLightTheme,
+  'sunburst': sunburstTheme,
+  'tomorrow_night_blue': tomorrowNightBlueTheme,
+  'tomorrow_night_bright': tomorrowNightBrightTheme,
+  'tomorrow_night_eighties': tomorrowNightEightiesTheme,
+  'tomorrow_night': tomorrowNightTheme,
+  'tomorrow': tomorrowTheme,
+  'vs': vsTheme,
+  'vs2015': vs2015Theme,
+  'xcode': xcodeTheme,
+  'xt256': xt256Theme,
+  'zenburn': zenburnTheme,
+};
